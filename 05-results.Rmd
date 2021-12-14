@@ -38,6 +38,10 @@ We generated standard indicators used by event organisors and sites from the dat
 
 - first_kill_ratio: ratio of the time where the team or player gets the first kill (which grants a numerical advantage)
 
+- grenades_per_round: average number of grenades (can be attack grenades or smokes) thrown in a round
+
+- attack_grenades_round: average number of attack grenades (i.e dealing direct damage when in the radius) thrown in a round
+
 - smokes_per_round: average number of smokes thrown in a round
 
 - assist_ratio: ratio of kills assisted by another player than dealt more than 40 points of damage
