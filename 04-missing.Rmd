@@ -36,7 +36,7 @@ The missing data is expected: when a player is killed, it has not necessarily be
 
 (Variables beginning with 'assist')
 
-Similarly, less than 15 percent of kills are helped with assists (patterns 2,5 in the graph below). An assist occurs when a teammate deals more than 40 points of damage to a player before that player is killed. The teammate then gets the assist for dealing damages, thus helping the kill. 
+Similarly, less than 15 percent of kills are helped with assists (patterns 2,5 in the graph below). An assist occurs when a teammate deals more than 40 points of damage to a player before that player is killed. The teammate, thus helping the kill by dealing damages, gets the assist. 
 
 (Variables beginning with 'playerTraded')
 
