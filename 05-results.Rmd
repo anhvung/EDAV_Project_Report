@@ -253,6 +253,7 @@ A <- playerstat  %>%  filter(match_played>10)  %>%  top_n(-30,rating) %>% arrang
 library(patchwork)
 A+B
 ```
+
 The rating is derived from the combined effort of the player considering various parameters like average kills per round, damages through grenade, headshot, ratio of first kills, duration of flashes etc.
 
 The player Autimatic has the highest rating of all and has one win with his team Cloud9 in the Boston Major. Interestingly, Zywoo, s1mple, and device are the immediate 3 highest rated players after autimatic. The fact that those three players where nominated in the top 3 players in 2018 and 2019 by the [HLTV](https://hltv.org) website means that our combined rating reflects the different ratings of other sites such as HLTV. Note that the player Zywoo started his career in 2018 thus is not in the top player ranking of this year. [2], [3], [4]
