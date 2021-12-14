@@ -151,7 +151,7 @@ Indicators with directions opposite to the loosing matches and closer to the cor
 
 
 
-Note that there is no indicator with a strong correlation (more than 0.7) with the score difference. But combining those indicators can still lead to a better overall rating score. We are going to achieve it with a multi-variable linear regression.
+Note that there is no indicator with a strong correlation (more than 0.7) with the score difference. But combining those indicators can still lead to a better overall rating score. We are going to achieve it with a multi-variable linear regression of score difference on these variables.
 
 ```{r rating}
 
@@ -170,6 +170,18 @@ team_killsstat <- team_killsstat %>% mutate(rating=100*(coef[1]+kpr*coef[2]+adr*
 coef
 
 ```
+
+If we look in further detail, we can see that the vast majority of these indicators are significative at the 5%-level (p-value < 0.05), except for two of them.
+
+```{r rating}
+
+summary(fit)
+
+```
+
+We also strongly reject the null hypothesis for the joint Fisher Statistic, our set of variables is relevant to understand the score difference in matches.
+
+
 
 ## Teams performance
 
